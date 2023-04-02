@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Каталог</title>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
+</head>
+
+
+<body>
+	<header class="header">
+   <div class="header-top">
+       <div class="container">
+           <div class="header-top__inner">
+               <div class="header-top__left">
+                   <div class="header-top__burger">
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                   </div>
+                   <a href="" class="header-top__logo">
+                       <img src="img/logo.png" alt="">
+                       <img src="img/logo_text.png" alt="">
+                   </a>
+                   <div class="header-top__info">
+                       <a class="header-top__location" href="">
+                           <i>
+                               <img src="img/location.svg" alt="">
+                           </i>
+                           <div class="header-top__location-text">г. Тула, ул. 9 мая, <span>д. 3, офис 208</span></div>
+                       </a>
+                       <a class="header-top__mail" href="">
+                            <i>
+                                <img src="img/mail.svg" alt="">
+                            </i>
+                           <span>olimptur@inbox.ru</span>
+                       </a>
+                   </div>
+               </div>
+               <div class="header-top__right">
+                    <div class="header-top__numbers">
+                        <a class="header-top__number" href="tel:+7 (4872) 710-530">
+                            <i>
+                                <img src="img/tel.svg" alt="">
+                            </i>
+                            <span>+7 (4872) 710-530</span>
+                        </a>
+                        <a class="header-top__number" href="tel:+7 (4872) 710-310">+7 (4872) 710-310</a>
+                        <a class="header-top__number" href="tel:8-920-740-33-55">8-920-740-33-55</a>
+                    </div>
+                    <div class="header-top__btns">
+                        <a class="header-top__btn btn btn-red" href="">Личный кабинет</a>
+                        <a class="header-top__btn2 btn" href="">On-line бронирование</a>
+                    </div>
+               </div>
+           </div>
+       </div>
+   </div>
+    <div class="header-bottom">
+        <div class="container">
+            <div class="header-bottom__inner">
+                <a class="header-bottom__home" href="">
+                    <img src="img/home.svg" alt="">
+                </a>
+                <ul class="header-bottom__list">
+                    <li><a href="">О компании</a></li>
+                    <li class="header-bottom__item">
+                        <div class="header-bottom__item-show">
+                            <span>Автобусные туры</span>
+                            <i>
+                                <img src="img/arrow.svg" alt="">
+                            </i>
+                        </div>
+                        <div class="header-bottom__item-hidden">
+                            <div class="header-bottom__hidden-inner">
+                                <a class="header-bottom__hidden-link" href="">Автобусные туры1</a>
+                                <a class="header-bottom__hidden-link" href="">Автобусные туры2</a>
+                                <a class="header-bottom__hidden-link" href="">Автобусные туры3</a>
+                                <a class="header-bottom__hidden-link" href="">Автобусные туры4</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="">Информация по отправлению</a></li>
+                    <li><a href="">Туристам</a></li>
+                    <li><a href="">Новости</a></li>
+                    <li class="header-bottom__item header-bottom__item2">
+                        <div class="header-bottom__item-show header-bottom__item-show2">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="header-bottom__item-hidden header-bottom__item-hidden2">
+                            <div class="header-bottom__hidden-inner">
+                                <a class="header-bottom__hidden-link" href="">График работы</a>
+                                <a class="header-bottom__hidden-link" href="">Контакты</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="">График работы</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+	<main class="content">
+		<aside class="sidebar">
+			<div class="container">
+				<div class="sidebar__inner">
+					<div class="sidebar__menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="sidebar__search">
+						<input type="search">
+						<img src="img/search.svg" alt="">
+					</div>
+					<div class="sidebar__socials">
+						<a class="sidebar__social" href="">
+							<img src="img/vk.png" alt="">
+						</a>
+						<a class="sidebar__social" href="">
+							<img src="img/whatsapp.png" alt="">
+						</a>
+						<a class="sidebar__social" href="">
+							<img src="img/telegram2.png" alt="">
+						</a>
+					</div>
+					<div class="sidebar__btns">
+						<a class="sidebar__btn btn btn-red" href="">
+							<span>Агентствам</span>
+						</a>
+						<a class="sidebar__btn2 btn btn-green" href="">
+							<span>Информация</span>
+						</a>
+						<a class="sidebar__btn3 btn btn-blue" href="">
+							<span>Заказ автобуса</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</aside>
+		<section class="catalog">
+			<img class="catalog__img-bg" src="img/catalog_bg2.webp" alt="">
+			<img class="catalog__img-bg2" src="img/catalog_bg.webp" alt="">
+			<div class="breadcrumbs">
+				<div class="container">
+					<div class="breadcrumbs__items">
+						<a href="index.html" class="breadcrumbs__item">Главная</a>
+						<a href="" class="breadcrumbs__item">Хлебные</a>
+						<span class="breadcrumbs__item breadcrumbs__item--active">Крошки</span>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="catalog__inner">
+					<div class="catalog__left">
+						<div class="catalog__left-wrapp">
+							<div class="catalog__left-top">
+								<div class="catalog__left-title">Фильтр</div>
+								<div class="catalog__left-close">
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+							<div class="catalog__items">
+								<div class="catalog__item">
+									<div class="catalog__item-title">Заголовок</div>
+									<div class="catalog__item-checkboxes">
+										<div class="catalog__item-checkbox">
+											<input type="checkbox">
+											<label>Параметр</label>
+										</div>
+										<div class="catalog__item-checkbox">
+											<input type="checkbox">
+											<label>Параметр</label>
+										</div>
+										<div class="catalog__item-checkbox">
+											<input type="checkbox">
+											<label>Параметр</label>
+										</div>
+										<div class="catalog__item-checkbox">
+											<input type="checkbox">
+											<label>Параметр</label>
+										</div>
+									</div>
+								</div>
+								<div class="catalog__item">
+									<div class="catalog__item-title">Заголовок</div>
+									<div class="catalog__item-checkboxes">
+										<div class="catalog__item-checkbox">
+											<input type="checkbox">
+											<label>Параметр</label>
+										</div>
+										<div class="catalog__item-checkbox">
+											<input type="checkbox">
+											<label>Параметр</label>
+										</div>
+										<div class="catalog__item-checkbox">
+											<input type="checkbox">
+											<label>Параметр</label>
+										</div>
+										<div class="catalog__item-checkbox">
+											<input type="checkbox">
+											<label>Параметр</label>
+										</div>
+									</div>
+								</div>
+								<div class="catalog__item">
+									<div class="catalog__item-title">Заголовок</div>
+									<div class="catalog__item-checkboxes">
+										<div class="catalog__item-checkbox">
+											<input type="checkbox">
+											<label>Параметр</label>
+										</div>
+										<div class="catalog__item-checkbox">
+											<input type="checkbox">
+											<label>Параметр</label>
+										</div>
+										<div class="catalog__item-checkbox">
+											<input type="checkbox">
+											<label>Параметр</label>
+										</div>
+										<div class="catalog__item-checkbox">
+											<input type="checkbox">
+											<label>Параметр</label>
+										</div>
+									</div>
+								</div>
+								<div class="catalog__item">
+									<div class="catalog__item-title">Заголовок</div>
+									<div class="catalog__item-checkboxes">
+										<div class="catalog__item-checkbox">
+											<input type="checkbox">
+											<label>Параметр</label>
+										</div>
+										<div class="catalog__item-checkbox">
+											<input type="checkbox">
+											<label>Параметр</label>
+										</div>
+										<div class="catalog__item-checkbox">
+											<input type="checkbox">
+											<label>Параметр</label>
+										</div>
+										<div class="catalog__item-checkbox">
+											<input type="checkbox">
+											<label>Параметр</label>
+										</div>
+									</div>
+								</div>
+								<div class="catalog__item">
+									<div class="catalog__item-title">Заголовок</div>
+									<div class="catalog__item-checkboxes">
+										<div class="catalog__item-checkbox">
+											<input type="checkbox">
+											<label>Параметр</label>
+										</div>
+										<div class="catalog__item-checkbox">
+											<input type="checkbox">
+											<label>Параметр</label>
+										</div>
+										<div class="catalog__item-checkbox">
+											<input type="checkbox">
+											<label>Параметр</label>
+										</div>
+										<div class="catalog__item-checkbox">
+											<input type="checkbox">
+											<label>Параметр</label>
+										</div>
+									</div>
+								</div>
+								<div class="catalog__item">
+									<div class="catalog__item-range">
+										<div class="catalog__item-title">цена</div>
+										<div class="catalog__item-slider slider">
+											<div class="catalog__item-progress progress"></div>
+										</div>
+										<div class="range-input">
+											<input type="range" class="range-min" min="0" max="250000" value="0">
+											<input type="range" class="range-max" min="0" max="250000" value="250000">
+										</div>
+										<div class="catalog__item-prices price-input">
+											<div class="field">
+												<input type="number" class="input-min" value="0" readonly>
+											</div>
+											<div class="field">
+												<input type="number" class="input-max" value="250000" readonly>
+											</div>
+										</div>
+									</div>
+									<div class="catalog__item-btns">
+										<a class="catalog__item-btn btn btn-red" href="">Сброосить</a>
+										<a class="catalog__item-btn btn btn-green" href="">Показать</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog__right">
+						<div class="catalog__top">
+							<h2 class="catalog__title display2">
+								<img src="img/title-icon.png" alt="">
+								<span>Туры</span>
+							</h2>
+							<div class="catalog__filter btn btn-red">Фильтр</div>
+						</div>
+						<div class="catalog__slider">
+							<div class="swiper mySwiper">
+								<div class="swiper-wrapper">
+									<a href="" class="swiper-slide tours__card">
+										<div class="tours__card-img">
+											<img src="img/tour.webp" alt="">
+										</div>
+										<div class="tours__card-desc">
+											<div class="tours__card-title">Ялта Интурист</div>
+											<div class="tours__card-city">Крым</div>
+											<div class="tours__card-info">
+												<div class="tours__info-desc">
+													<img src="img/tour-icon.svg" alt="">
+													<span>100 м до пляжа</span>
+												</div>
+												<div class="tours__info-desc">
+													<img src="img/tour-icon.svg" alt="">
+													<span>100 м до пляжа</span>
+												</div>
+											</div>
+											<div class="tours__card-price">
+												<img src="img/price-icon.png" alt="">
+												<span>15 000 ₽</span>
+											</div>
+											<button class="tours__card-btn">Подробнее</button>
+										</div>
+									</a>
+									<a href="" class="swiper-slide tours__card">
+										<div class="tours__card-img">
+											<img src="img/tour2.webp" alt="">
+										</div>
+										<div class="tours__card-desc">
+											<div class="tours__card-title">Ялта Интурист</div>
+											<div class="tours__card-city">Крым</div>
+											<div class="tours__card-info">
+												<div class="tours__info-desc">
+													<img src="img/tour-icon.svg" alt="">
+													<span>100 м до пляжа</span>
+												</div>
+												<div class="tours__info-desc">
+													<img src="img/tour-icon.svg" alt="">
+													<span>100 м до пляжа</span>
+												</div>
+											</div>
+											<div class="tours__card-price">
+												<img src="img/price-icon.png" alt="">
+												<span>15 000 ₽</span>
+											</div>
+											<button class="tours__card-btn">Подробнее</button>
+										</div>
+									</a>
+									<a href="" class="swiper-slide tours__card">
+										<div class="tours__card-img">
+											<img src="img/tour3.webp" alt="">
+										</div>
+										<div class="tours__card-desc">
+											<div class="tours__card-title">Ялта Интурист</div>
+											<div class="tours__card-city">Крым</div>
+											<div class="tours__card-info">
+												<div class="tours__info-desc">
+													<img src="img/tour-icon.svg" alt="">
+													<span>100 м до пляжа</span>
+												</div>
+												<div class="tours__info-desc">
+													<img src="img/tour-icon.svg" alt="">
+													<span>100 м до пляжа</span>
+												</div>
+											</div>
+											<div class="tours__card-price">
+												<img src="img/price-icon.png" alt="">
+												<span>15 000 ₽</span>
+											</div>
+											<button class="tours__card-btn">Подробнее</button>
+										</div>
+									</a>
+									<a href="" class="swiper-slide tours__card">
+										<div class="tours__card-img">
+											<img src="img/tour4.webp" alt="">
+										</div>
+										<div class="tours__card-desc">
+											<div class="tours__card-title">Ялта Интурист</div>
+											<div class="tours__card-city">Крым</div>
+											<div class="tours__card-info">
+												<div class="tours__info-desc">
+													<img src="img/tour-icon.svg" alt="">
+													<span>100 м до пляжа</span>
+												</div>
+												<div class="tours__info-desc">
+													<img src="img/tour-icon.svg" alt="">
+													<span>100 м до пляжа</span>
+												</div>
+											</div>
+											<div class="tours__card-price">
+												<img src="img/price-icon.png" alt="">
+												<span>15 000 ₽</span>
+											</div>
+											<button class="tours__card-btn">Подробнее</button>
+										</div>
+									</a>
+									<a href="" class="swiper-slide tours__card">
+										<div class="tours__card-img">
+											<img src="img/tour.webp" alt="">
+										</div>
+										<div class="tours__card-desc">
+											<div class="tours__card-title">Ялта Интурист</div>
+											<div class="tours__card-city">Крым</div>
+											<div class="tours__card-info">
+												<div class="tours__info-desc">
+													<img src="img/tour-icon.svg" alt="">
+													<span>100 м до пляжа</span>
+												</div>
+												<div class="tours__info-desc">
+													<img src="img/tour-icon.svg" alt="">
+													<span>100 м до пляжа</span>
+												</div>
+											</div>
+											<div class="tours__card-price">
+												<img src="img/price-icon.png" alt="">
+												<span>15 000 ₽</span>
+											</div>
+											<button class="tours__card-btn">Подробнее</button>
+										</div>
+									</a>
+									<a href="" class="swiper-slide tours__card">
+										<div class="tours__card-img">
+											<img src="img/tour2.webp" alt="">
+										</div>
+										<div class="tours__card-desc">
+											<div class="tours__card-title">Ялта Интурист</div>
+											<div class="tours__card-city">Крым</div>
+											<div class="tours__card-info">
+												<div class="tours__info-desc">
+													<img src="img/tour-icon.svg" alt="">
+													<span>100 м до пляжа</span>
+												</div>
+												<div class="tours__info-desc">
+													<img src="img/tour-icon.svg" alt="">
+													<span>100 м до пляжа</span>
+												</div>
+											</div>
+											<div class="tours__card-price">
+												<img src="img/price-icon.png" alt="">
+												<span>15 000 ₽</span>
+											</div>
+											<button class="tours__card-btn">Подробнее</button>
+										</div>
+									</a>
+									<a href="" class="swiper-slide tours__card">
+										<div class="tours__card-img">
+											<img src="img/tour7.webp" alt="">
+										</div>
+										<div class="tours__card-desc">
+											<div class="tours__card-title">Ялта Интурист</div>
+											<div class="tours__card-city">Крым</div>
+											<div class="tours__card-info">
+												<div class="tours__info-desc">
+													<img src="img/tour-icon.svg" alt="">
+													<span>100 м до пляжа</span>
+												</div>
+												<div class="tours__info-desc">
+													<img src="img/tour-icon.svg" alt="">
+													<span>100 м до пляжа</span>
+												</div>
+											</div>
+											<div class="tours__card-price">
+												<img src="img/price-icon.png" alt="">
+												<span>15 000 ₽</span>
+											</div>
+											<button class="tours__card-btn">Подробнее</button>
+										</div>
+									</a>
+									<a href="" class="swiper-slide tours__card">
+										<div class="tours__card-img">
+											<img src="img/tour8.webp" alt="">
+										</div>
+										<div class="tours__card-desc">
+											<div class="tours__card-title">Ялта Интурист</div>
+											<div class="tours__card-city">Крым</div>
+											<div class="tours__card-info">
+												<div class="tours__info-desc">
+													<img src="img/tour-icon.svg" alt="">
+													<span>100 м до пляжа</span>
+												</div>
+												<div class="tours__info-desc">
+													<img src="img/tour-icon.svg" alt="">
+													<span>100 м до пляжа</span>
+												</div>
+											</div>
+											<div class="tours__card-price">
+												<img src="img/price-icon.png" alt="">
+												<span>15 000 ₽</span>
+											</div>
+											<button class="tours__card-btn">Подробнее</button>
+										</div>
+									</a>
+									<a href="" class="swiper-slide tours__card">
+										<div class="tours__card-img">
+											<img src="img/tour.webp" alt="">
+										</div>
+										<div class="tours__card-desc">
+											<div class="tours__card-title">Ялта Интурист</div>
+											<div class="tours__card-city">Крым</div>
+											<div class="tours__card-info">
+												<div class="tours__info-desc">
+													<img src="img/tour-icon.svg" alt="">
+													<span>100 м до пляжа</span>
+												</div>
+												<div class="tours__info-desc">
+													<img src="img/tour-icon.svg" alt="">
+													<span>100 м до пляжа</span>
+												</div>
+											</div>
+											<div class="tours__card-price">
+												<img src="img/price-icon.png" alt="">
+												<span>15 000 ₽</span>
+											</div>
+											<button class="tours__card-btn">Подробнее</button>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__pagination pagination">
+							<a href="" class="pagination__btn pagination__btn--prev">Назад</a>
+							<a href="" class="pagination__item pagination__item--active">
+								<span>1</span>
+							</a>
+							<a href="" class="pagination__item">
+								<span>2</span>
+							</a>
+							<a href="" class="pagination__item">
+								<span>3</span>
+							</a>
+							<a href="" class="pagination__item">
+								<span>...</span>
+							</a>
+							<a href="" class="pagination__item">
+								<span>8</span>
+							</a>
+							<a href="" class="pagination__btn pagination__btn--next">Вперед</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about2">
+			<div class="container">
+				<div class="about2__inner">
+					<h2 class="about2__title display2">
+						<img src="img/title-icon.png" alt="">
+						<span>О компании</span>
+						<div class="about2__title-bg">О компании</div>
+					</h2>
+					<div class="about2__desc">
+						<p>
+							Уважаемые дамы и господа!!!
+						</p>
+						<p>
+							Вас приветствует транспортно-туристическая компания «Олимп». Около 8 лет мы работаем для Вас на рынке туристских услуг и пассажирских перевозок. Мы успешно сотрудничаем как с частными лицами, так и с корпоративными клиентами. Цель нашей компании – обеспечить максимально качественное выполнение услуг и многочисленные положительные отзывы туристов и партнеров тому подтверждение. Компания «Олимп» осуществляет туроператорскую деятельность и внесена в единый федеральный реестр туроператоров.
+						</p>
+						<p>
+							Вас приветствует транспортно-туристическая компания «Олимп». Около 8 лет мы работаем для Вас на рынке туристских услуг и пассажирских перевозок. Мы успешно сотрудничаем как с частными лицами, так и с корпоративными клиентами. Цель нашей компании – обеспечить максимально качественное выполнение услуг и многочисленные положительные отзывы туристов и партнеров тому подтверждение. Компания «Олимп» осуществляет туроператорскую деятельность и внесена в единый федеральный реестр туроператоров.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <a href="" class="footer__logo">
+                <img src="img/logo.png" alt="">
+                <img src="img/logo_text.png" alt="">
+            </a>
+           <div class="footer__nav">
+               <ul class="footer__list">
+                   <li>Меню</li>
+                   <li><a href="">О компании</a></li>
+                   <li><a href="">Новости</a></li>
+                   <li><a href="">Агентствам</a></li>
+                   <li><a href="">Автобусные туры</a></li>
+                   <li><a href="">Поиск заграничных туров</a></li>
+                   <li><a href="">Заказ автобусов</a></li>
+                   <li><a href="">Контакты</a></li>
+               </ul>
+               <ul class="footer__list">
+                   <li>Крым</li>
+                   <li><a href="">пос. Береговое</a></li>
+                   <li><a href="">гор. Феодосия</a></li>
+                   <li><a href="">пос. Коктебель</a></li>
+                   <li><a href="">пос. Судак</a></li>
+               </ul>
+               <ul class="footer__list">
+                   <li>Краснодарский край</li>
+                   <li><a href="">пос. Береговое</a></li>
+                   <li><a href="">гор. Феодосия</a></li>
+                   <li><a href="">пос. Коктебель</a></li>
+                   <li><a href="">пос. Судак</a></li>
+               </ul>
+               <ul class="footer__list">
+                   <li>Абхазия</li>
+                   <li><a href="">пос. Береговое</a></li>
+                   <li><a href="">гор. Феодосия</a></li>
+                   <li><a href="">пос. Коктебель</a></li>
+                   <li><a href="">пос. Судак</a></li>
+               </ul>
+           </div>
+            <div class="footer__info">
+                <div class="footer__brevis">
+                    <div class="footer__brevis.img">
+                        <img src="img/brevis.png" alt="">
+                    </div>
+                    <div class="footer__brevis-text">
+                        Разработка корпоративного сайта
+                        <a href="">интернет-агентство BREVIS</a>
+                    </div>
+                </div>
+                <div class="footer__socials">
+                    <a class="footer__social" href="">
+                        <img src="img/insta.svg" alt="">
+                        <span>Instagram</span>
+                    </a>
+                    <a class="footer__social" href="">
+                        <img src="img/facebook.svg" alt="">
+                        <span>Facebook</span>
+                    </a>
+                </div>
+                <a class="footer__btn btn" href="">Бесплатная консультация</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

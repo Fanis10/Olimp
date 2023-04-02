@@ -146,6 +146,80 @@
 				</div>
 			</div>
 		</aside>
+		<section class="tour-main">
+			<div class="breadcrumbs">
+				<div class="container">
+					<div class="breadcrumbs__items">
+						<a href="index.html" class="breadcrumbs__item">Главная</a>
+						<a href="" class="breadcrumbs__item">Хлебные</a>
+						<span class="breadcrumbs__item breadcrumbs__item--active">Крошки</span>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<h2 class="tour-main__title display2">
+					<img src="img/title-icon.png" alt="">
+					<span>Заголовок</span>
+				</h2>
+				<div class="tour-main__inner">
+					<div class="tour-main__left">
+						<div class="gallery">
+							<div class="gallery__big swiper mySwiper2">
+								<div class="swiper-wrapper gallery-group">
+									<a class="swiper-slide" data-fancybox="gallery" href="img/tour-main.webp">
+										<img src="img/tour-main.webp" alt="">
+									</a>
+									<a class="swiper-slide" data-fancybox="gallery" href="img/tour-main2.webp">
+										<img src="img/tour-main2.webp" alt="">
+									</a>
+									<a class="swiper-slide" data-fancybox="gallery" href="img/tour-main3.webp">
+										<img src="img/tour-main3.webp" alt="">
+									</a>
+									<a class="swiper-slide" data-fancybox="gallery" href="img/tour-main4.webp">
+										<img src="img/tour-main4.webp" alt="">
+									</a>
+									<a class="swiper-slide" data-fancybox="gallery" href="img/tour-main5.webp">
+										<img src="img/tour-main5.webp" alt="">
+									</a>
+								</div>
+								<div class="swiper-slide__btns">
+									<div class="swiper-button-prev">
+										<img src="img/arrow_left.svg" alt="">
+									</div>
+									<div class="swiper-button-next">
+										<img src="img/arrow_right.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="gallery__small-wrapp">
+								<div thumbsslider="" class="gallery__small swiper mySwiper">
+									<div class="swiper-wrapper">
+										<a class="swiper-slide">
+											<img src="img/tour-main.webp" alt="">
+										</a>
+										<a class="swiper-slide">
+											<img src="img/tour-main2.webp" alt="">
+										</a>
+										<a class="swiper-slide">
+											<img src="img/tour-main3.webp" alt="">
+										</a>
+										<a class="swiper-slide">
+											<img src="img/tour-main4.webp" alt="">
+										</a>
+										<a class="swiper-slide">
+											<img src="img/tour-main5.webp" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tour-main__right">
+						<div id="map2" class="map2"></div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<section class="info">
 			<div class="container">
 				<div class="info__inner">
@@ -886,6 +960,26 @@
 	<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
 
+	<script type="text/javascript">
+    ymaps.ready(init);
+
+    function init() {
+        var myMap = new ymaps.Map("map2", {
+            center: [44.948237, 34.100327],
+            zoom: 15
+        });
+
+        var myPlacemark = new ymaps.Placemark([44.948237, 34.100327], null, {
+            iconLayout: 'default#image',
+            iconImageHref: "img/map-icon.svg",
+            iconImageSize: [45, 60],
+            // iconImageOffset: [-15, -44]
+        });
+        myMap.geoObjects.add(myPlacemark);
+        myMap.behaviors.disable('scrollZoom');
+
+    }
+</script>
 </body>
 
 </html>

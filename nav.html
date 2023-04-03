@@ -7,22 +7,62 @@
 	<meta name="keywords" content="">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
-	<title>Тур</title>
+	<title>Навигация</title>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
 </head>
 
 
 <body>
 
-	<nav class="nav">
+	<div class="nav">
 		<div class="container">
 			<ul>
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="catalog.html">Каталог</a></li>
 				<li><a href="tour.html">Тур</a></li>
+				<li>
+					<button class="modal__btn btn-red" data-modal="contactModal">
+						<span class="btn-red__animation"></span>
+						<span class="btn-red__text">Модальное окно</span>
+					</button>
+				</li>
 			</ul>
+
+			<div class="modal" id="contactModal">
+				<div class="modal__dialog">
+					<button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+						<span></span>
+						<span></span>
+					</button>
+					<div class="modal__content">
+						<h2 class="modal__title">Бесплатная консультация</h2>
+						<form class="modal__form">
+							<fieldset class="modal__form-group">
+								<input type="text" placeholder="Ваше имя">
+								<i>
+									<img src="img/user.png" alt="">
+								</i>
+							</fieldset>
+							<fieldset class="modal__form-group">
+								<input type="tel" placeholder="Ваш телефон">
+								<i>
+									<img src="img/tel3.png" alt="">
+								</i>
+							</fieldset>
+							<div class="modal__form-info">Нажимая на кнопку “Отправить” вы соглашаетесь с политикой конфиденциальности</div>
+							<button class="modal__form-btn btn-red">
+								<span class="btn-red__animation"></span>
+								<span class="btn-red__text">отправить</span>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
-	</nav>
+	</div>
+
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
 
 </body>
 
